@@ -1,0 +1,146 @@
+@media (max-width: 1100px) {
+  .main_text > h1 {
+    font-size: 2.5rem;
+  }
+  .insurance_img {
+    grid-template-columns: repeat(3, 0.6fr) 1fr;
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+  .main_wrapper {
+    flex-direction: column;
+  }
+  .main_img_wrapper {
+    background-position: center;
+    margin-bottom: 0;
+  }
+  .boxes_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .boxes_wrapper_item {
+    padding: 92px;
+  }
+  .nav_wrapper {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 800px) {
+  .main_text > h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .main_text {
+    padding-left: 0px;
+  }
+  .btn_wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav {
+    visibility: hidden;
+  }
+  .main_wrapper {
+    padding-top: 30px;
+  }
+  .insurance_img {
+    grid-template-columns: 1fr 1fr;
+  }
+  .insurance {
+    flex-direction: column;
+  }
+  .insurance_btn {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .mission_wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "revText"
+      "revImg";
+    padding: 31px 31px 0px 18px;
+  }
+  .mission_img_wrapper {
+    grid-area: revImg;
+  }
+  .mission_text_wrapper {
+    grid-area: revText;
+  }
+  .parallax_wrapper {
+    flex-direction: column;
+  }
+  .socials_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .tikTok_wrapper {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .footer_links_wrapper {
+    display: none;
+  }
+  .copyrights_wrapper {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    padding: 14px;
+    text-align: center;
+  }
+  .images_wrapper > img {
+    max-width: 66px;
+  }
+  .boxes_wrapper_item {
+    padding: 91px 36px;
+  }
+  .copyrights_wrapper {
+    padding-top: 112px;
+    border-top: none;
+  }
+  .footer_socials_wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .circle_item-right {
+    right: 2px;
+  }
+}
+@media (max-width: 600px) {
+  .boxes_item_img > img {
+    max-width: 76%;
+  }
+  .circle_item > img,
+  .circle_items > img,
+  .circle_item-bottoms > img {
+    width: 64.47px;
+  }
+  .circle_item-bottom {
+    bottom: -35px;
+  }
+  input[type="text"] {
+    max-width: 240px;
+  }
+  .spotify_title {
+    padding-left: 18px;
+  }
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .mob_orange_text {
+    color: #f68d2e;
+  }
+  .subscribe {
+    padding-top: 65px;
+  }
+  .main_text {
+    padding: 20px;
+  }
+  .main_text > h1 {
+    font-size: 44px;
+  }
+  .main_img_wrapper {
+    min-height: 390px;
+  }
+  .insurance {
+    margin-top: 300px;
+  }
+}

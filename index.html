@@ -421,7 +421,7 @@
     </div>
     <footer class="black">
         <div class="footer_links_wrapper">
-            <div class="footer_links_items">
+            <div class="footer_links_items page_links">
                 <ul class="links_holder">
                     <li class="footer_link_item">
                         <a href="#"> About</a>
@@ -437,7 +437,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer_links_items">
+            <div class="footer_links_items mob_off">
                 <ul class="links_holder">
                     <li class="footer_link_item">
                         <a href="#"> Privacy Policy</a>
@@ -458,7 +458,7 @@
         <div class="copyrights_wrapper">
             <div class="socials_wrapper">
                 <ul class="footer_socials_wrapper">
-                    <li class="footer_socials_item line">
+                    <li class="footer_socials_item line stop_padding">
                         <a href="#">
                             Podcast
                         </a>
@@ -475,6 +475,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer_links_items mob_on">
+                <ul class="links_holder">
+                    <li class="footer_link_item">
+                        <a href="#"> Privacy Policy</a>
+                    </li>
+                    <li class="footer_link_item">
+                        <a href="#"> Terms and Condition</a>
+                    </li>
+
+                </ul>
+            </div>
             <div class="copyright_text_wrapper">
                 <p>
                     © 2021 Copyright, All rights reserved
@@ -486,28 +497,19 @@
             </div>
         </div>
     </footer>
-    <style>
-        body.modal-open {
-            overflow-y: hidden !important;
-            position: fixed !important;
-            height: 100vh !important;
-        }
-    </style>
     <script>
         let over = document.getElementById('overlay');
         let bodyOff = document.body;
         document.querySelector('.humburger').onclick = function () {
-            // this.classList.toggle('active');
             over.style.visibility = 'visible';
             bodyOff.style.overflowY = 'hidden';
-            console.log(bodyOff.classList)
+            console.log(bodyOff.classList);
         };
         document.querySelector('.modal_close').onclick = function () {
             over.style.visibility = 'hidden';
-            bodyOff.style.overflowY = 'scroll'
+            bodyOff.style.overflowY = 'scroll';
             this.classList.toggle('active');
         }
-
     </script>
 </body>
 

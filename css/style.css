@@ -595,6 +595,12 @@ footer {
   top: 0;
   right: -50px;
 }
+.stop_padding > a:after{
+  content: "/";
+  position: absolute;
+  top: 0;
+  right: -35px;
+}
 .footer_socials_wrapper {
   list-style: none;
   padding-left: 0;
@@ -704,6 +710,12 @@ footer {
 .modal-open {
   overflow: hidden;
   position: fixed;
+}
+.stop_padding > a{
+  padding: 0 40px 0 0;
+}
+.mob_on{
+  display: none;
 }
 /* .subscribe_wrapper,
 .boxes_wrapper,

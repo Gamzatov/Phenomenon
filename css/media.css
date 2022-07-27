@@ -95,7 +95,7 @@
     padding: 91px 36px;
   }
   .copyrights_wrapper {
-    padding-top: 112px;
+    /* padding-top: 112px; */
     border-top: none;
   }
   .footer_socials_wrapper {
@@ -115,7 +115,8 @@
   .nav_wrapper {
     padding: 0 10px;
   }
-  .footer_links_wrapper {
+  .page_links,
+  .discover_footer {
     display: none;
   }
 }
@@ -132,7 +133,7 @@
     bottom: -35px;
   }
   input[type="text"] {
-    max-width: 240px;
+    max-width: 271px;
   }
   .spotify_title {
     padding-left: 18px;
@@ -158,5 +159,49 @@
   }
   .insurance {
     margin-top: 300px;
+  }
+  .footer_links_wrapper {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .links_holder {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer_links_wrapper {
+    grid-area: privacy;
+  }
+  .socials_wrapper {
+    grid-area: socials;
+  }
+  .copyright_text_wrapper {
+    grid-area: copyright;
+  }
+  .footer_subscribe_wrapper {
+    grid-area: input;
+  }
+  .copyrights_wrapper {
+    grid-template-areas: "socials" "input" "policy" "copyright";
+  }
+  .footer_links_items {
+    grid-area: policy;
+  }
+  .mob_off {
+    display: none;
+  }
+  .mob_on {
+    display: block;
+    border-top: 1px solid #524C45;
+    padding-top: 28px;
+    margin-top: 28px;
+  }
+  .stop_padding > a{
+    padding: 0 40px;
+    
+  }
+  .footer_link_item{
+    padding: 0;
   }
 }

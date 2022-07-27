@@ -488,22 +488,24 @@
     </footer>
     <style>
         body.modal-open {
-            overflow: hidden;
-            position: fixed;
-            height: 100vh;
+            overflow-y: hidden !important;
+            position: fixed !important;
+            height: 100vh !important;
         }
     </style>
     <script>
         let over = document.getElementById('overlay');
         let bodyOff = document.body;
         document.querySelector('.humburger').onclick = function () {
-            this.classList.toggle('active');
+            // this.classList.toggle('active');
             over.style.visibility = 'visible';
-            bodyOff.classList.add = 'modal-open'
+            bodyOff.style.overflowY = 'hidden';
             console.log(bodyOff.classList)
         };
-        function close() {
+        document.querySelector('.modal_close').onclick = function () {
             over.style.visibility = 'hidden';
+            bodyOff.style.overflowY = 'scroll'
+            this.classList.toggle('active');
         }
 
     </script>

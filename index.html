@@ -24,6 +24,13 @@
             </div>
         </div>
         <nav class="nav">
+            <div class="mob_button">
+                <div class="humburger">
+                    <span class="l1"></span>
+                    <span class="l2"></span>
+                    <span class="l3"></span>
+                </div>
+            </div>
             <div class="nav_wrapper">
                 <div class="nav_links">
                     <ul class="links_wrapper">
@@ -347,7 +354,7 @@
             </div>
             <div class="title_wrapper">
                 <p class="title">
-                  <span class="mob_orange_text">  Join the Waitlist </span><br>
+                    <span class="mob_orange_text"> Join the Waitlist </span><br>
                     <span class="font_title">
                         Your partner will appreciate you.
                     </span>
@@ -393,6 +400,25 @@
             </div>
         </div>
     </div>
+    <div class="overlay" id="overlay">
+        <div class="modal_menu">
+            <div class="modal_close" onclick="close()">X</div>
+            <div class="modal_content">
+                <ul class="modal_menu_list">
+                    <li class="modal_menu_item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="modal_menu_item">
+                        <a href="#">How it works</a>
+                    </li>
+                    <li class="modal_menu_item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
     <footer class="black">
         <div class="footer_links_wrapper">
             <div class="footer_links_items">
@@ -428,19 +454,18 @@
                 </p>
                 <button class="nav_btn_link blue white_shadow">Get a Kit 📦</button>
             </div>
-
         </div>
         <div class="copyrights_wrapper">
             <div class="socials_wrapper">
                 <ul class="footer_socials_wrapper">
                     <li class="footer_socials_item line">
                         <a href="#">
-                            Podcast 
+                            Podcast
                         </a>
                     </li>
                     <li class="footer_socials_item line">
                         <a href="#">
-                            TikTok 
+                            TikTok
                         </a>
                     </li>
                     <li class="footer_socials_item">
@@ -452,18 +477,36 @@
             </div>
             <div class="copyright_text_wrapper">
                 <p>
-                    © 2021 Copyright,  All rights reserved
+                    © 2021 Copyright, All rights reserved
                 </p>
             </div>
             <div class="footer_subscribe_wrapper">
                 <input class="input_field" type="text" placeholder="E-mail"><input class="submit_btn" type="submit"
-                value="Subscribe">
+                    value="Subscribe">
             </div>
         </div>
-        
     </footer>
+    <style>
+        body.modal-open {
+            overflow: hidden;
+            position: fixed;
+            height: 100vh;
+        }
+    </style>
+    <script>
+        let over = document.getElementById('overlay');
+        let bodyOff = document.body;
+        document.querySelector('.humburger').onclick = function () {
+            this.classList.toggle('active');
+            over.style.visibility = 'visible';
+            bodyOff.classList.add = 'modal-open'
+            console.log(bodyOff.classList)
+        };
+        function close() {
+            over.style.visibility = 'hidden';
+        }
 
-
+    </script>
 </body>
 
 </html>

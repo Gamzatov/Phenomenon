@@ -510,6 +510,11 @@
             bodyOff.style.overflowY = 'scroll';
             this.classList.toggle('active');
         }
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                over.style.visibility = 'hidden';
+            }
+        });
     </script>
 </body>
 

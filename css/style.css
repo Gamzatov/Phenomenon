@@ -503,6 +503,7 @@ input[type="submit"]:hover {
   background: url("../assets/images/tikTok.jpg");
   text-align: center;
   padding-top: 89px;
+  background-position: center;
   background-size: cover;
 }
 .spotify_wrapper {

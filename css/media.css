@@ -43,7 +43,7 @@
     visibility: hidden;
   } */
   .main_wrapper {
-    padding-top: 110px;
+    padding-top: 90px;
   }
   .insurance_img {
     grid-template-columns: 1fr 1fr;
@@ -119,6 +119,9 @@
   .discover_footer {
     display: none;
   }
+  .mission_text_title > h1{
+    font-size: 36px;
+  }
 }
 @media (max-width: 600px) {
   .boxes_item_img > img {
@@ -153,9 +156,10 @@
   }
   .main_text > h1 {
     font-size: 44px;
+    line-height: 41.8px;
   }
   .main_img_wrapper {
-    min-height: 390px;
+    min-height: 343px;
   }
   .insurance {
     margin-top: 300px;

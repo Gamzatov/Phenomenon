@@ -506,6 +506,12 @@ input[type="submit"]:hover {
   background-position: center;
   background-size: cover;
 }
+.abso{
+  position: absolute;
+  display: block;
+  right: 3%;
+  top: 42.5px;
+}
 .spotify_wrapper {
   padding-top: 89px;
 }

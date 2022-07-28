@@ -2,6 +2,9 @@
   .main_text > h1 {
     font-size: 2.5rem;
   }
+  .rel{
+    padding-right: 6%;
+  }
   .insurance_img {
     grid-template-columns: repeat(3, 0.6fr) 1fr;
     padding-left: 9%;
@@ -27,6 +30,12 @@
 @media (max-width: 800px) {
   .humburger {
     display: block;
+  }
+  .rel{
+    padding-right: 0;
+  }
+  .abso{
+    position: relative !important;
   }
   .main_text > h1 {
     text-align: center;
